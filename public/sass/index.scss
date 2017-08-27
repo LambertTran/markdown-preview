@@ -1,6 +1,6 @@
 $input-bg:#F2F3F4  ;
 $phone-size: 450px;
-$tablet-size: 750px;
+$tablet-size: 751px;
 
 @mixin boxProps{
   margin: 1em auto;
@@ -13,7 +13,7 @@ $tablet-size: 750px;
 
   @media screen and (min-width:$tablet-size) {
     width: 90%;
-    height:500px;
+    height:600px;
   }
 }
 
@@ -26,6 +26,11 @@ html,body{
   background-color:#EBEDEF  ;
   width: 90%;
   height: 100vh;
+
+  @media screen and (max-width:$phone-size) {
+  height:100%;
+}
+
 }
 
 .title{
